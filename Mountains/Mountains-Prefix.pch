@@ -1,0 +1,21 @@
+//
+//  Mountains-Prefix.pch
+//  Mountains
+//
+//  Created by Тимур Аюпов on 09.05.16.
+//  Copyright © 2016 Тимур Аюпов. All rights reserved.
+//
+
+#ifndef Mountains_Prefix_pch
+#define Mountains_Prefix_pch
+
+#import "UIColor+MountainsColor.h"
+#import "UIFont+MountainsFont.h"
+#import "CustomTextFieldStyle.h"
+#import "CustomRedButtonStyle.h"
+#import "CustomBlueButtonStyle.h"
+#import "CustomTransparentViewStyle.h"
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* Mountains_Prefix_pch */
