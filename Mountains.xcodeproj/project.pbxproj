@@ -7,39 +7,54 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1E332DD41CE1C3480078D1F3 /* MountainsListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E332DD31CE1C3480078D1F3 /* MountainsListTableViewCell.m */; };
-		1E332DD61CE1C3740078D1F3 /* MountainsListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E332DD51CE1C3740078D1F3 /* MountainsListTableViewCell.xib */; };
-		1E332DD91CE1D81A0078D1F3 /* DetailsInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E332DD81CE1D81A0078D1F3 /* DetailsInfoViewController.m */; };
-		1E332DDC1CE1DA270078D1F3 /* CollectionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E332DDB1CE1DA270078D1F3 /* CollectionTableViewCell.m */; };
-		1E332DDE1CE1DA3A0078D1F3 /* CollectionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E332DDD1CE1DA3A0078D1F3 /* CollectionTableViewCell.xib */; };
+		1E06EBCC1CFADE9F00939560 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1E06EBCB1CFADE9F00939560 /* GoogleService-Info.plist */; };
+		1E06EBD01CFAE57500939560 /* MountainsListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E06EBCF1CFAE57500939560 /* MountainsListTableViewController.m */; };
+		1E06EBD51CFAE5EA00939560 /* Mountain.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E06EBD41CFAE5EA00939560 /* Mountain.m */; };
+		1E06EBD81CFAEBF500939560 /* MountainDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E06EBD71CFAEBF500939560 /* MountainDataSource.m */; };
+		1E06EBDC1CFAF10500939560 /* MountainTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E06EBDB1CFAF10500939560 /* MountainTableViewCell.m */; };
+		1E06EBDE1CFAF11200939560 /* MountainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E06EBDD1CFAF11200939560 /* MountainTableViewCell.xib */; };
+		1E06EBE61CFAF8E700939560 /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E06EBE51CFAF8E700939560 /* SignInViewController.m */; };
+		1E06EC001CFB361400939560 /* DetailMountainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E06EBFF1CFB361400939560 /* DetailMountainTableViewController.m */; };
+		1E06EC041CFB367200939560 /* ImageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E06EC021CFB367200939560 /* ImageTableViewCell.m */; };
+		1E06EC051CFB367200939560 /* ImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E06EC031CFB367200939560 /* ImageTableViewCell.xib */; };
+		1E06EC091CFB372100939560 /* DescriptionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E06EC071CFB372100939560 /* DescriptionTableViewCell.m */; };
+		1E06EC0A1CFB372100939560 /* DescriptionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E06EC081CFB372100939560 /* DescriptionTableViewCell.xib */; };
+		1E06EC0D1CFB4AA600939560 /* CreateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E06EC0C1CFB4AA600939560 /* CreateViewController.m */; };
+		1E06EC101CFB4F0A00939560 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E06EC0F1CFB4F0A00939560 /* ProfileViewController.m */; };
 		1E446E591CDE1624006A2303 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E446E581CDE1624006A2303 /* main.m */; };
 		1E446E5C1CDE1624006A2303 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E446E5B1CDE1624006A2303 /* AppDelegate.m */; };
 		1E446E621CDE1624006A2303 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E446E601CDE1624006A2303 /* Main.storyboard */; };
 		1E446E641CDE1624006A2303 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E446E631CDE1624006A2303 /* Assets.xcassets */; };
 		1E446E671CDE1624006A2303 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E446E651CDE1624006A2303 /* LaunchScreen.storyboard */; };
-		1E88828B1CE0DC5B0018AA2D /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E88828A1CE0DC5B0018AA2D /* LoginViewController.m */; };
-		1E88828E1CE0DF870018AA2D /* CustomTransparentViewStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E88828D1CE0DF870018AA2D /* CustomTransparentViewStyle.m */; };
-		1E8882971CE0E3CA0018AA2D /* CustomRedButtonStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E8882961CE0E3CA0018AA2D /* CustomRedButtonStyle.m */; };
-		1E88829A1CE0E3E50018AA2D /* CustomBlueButtonStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E8882991CE0E3E50018AA2D /* CustomBlueButtonStyle.m */; };
-		1E88829D1CE0E9AA0018AA2D /* CustomTextFieldStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E88829C1CE0E9AA0018AA2D /* CustomTextFieldStyle.m */; };
-		1E94B1F11CE128AE00E5132B /* UIColor+MountainsColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E94B1F01CE128AE00E5132B /* UIColor+MountainsColor.m */; };
-		1E94B1F91CE12F9500E5132B /* UIFont+MountainsFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E94B1F81CE12F9500E5132B /* UIFont+MountainsFont.m */; };
-		1E94B2021CE149BB00E5132B /* MountainsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E94B2011CE149BB00E5132B /* MountainsListViewController.m */; };
-		1ED538031CE653A2007A4C06 /* DescriptionMountainTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ED538021CE653A2007A4C06 /* DescriptionMountainTableViewCell.m */; };
-		1ED538051CE653AF007A4C06 /* DescriptionMountainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1ED538041CE653AF007A4C06 /* DescriptionMountainTableViewCell.xib */; };
-		1ED538081CE6560E007A4C06 /* InfoMountainTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ED538071CE6560E007A4C06 /* InfoMountainTableViewCell.m */; };
-		1ED5380A1CE6561B007A4C06 /* InfoMountainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1ED538091CE6561B007A4C06 /* InfoMountainTableViewCell.xib */; };
+		AE5CA16F4C99BCFDDA2820D5 /* libPods-Mountains.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EB74106564742142FE6D94F0 /* libPods-Mountains.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1E332DD21CE1C3480078D1F3 /* MountainsListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MountainsListTableViewCell.h; sourceTree = "<group>"; };
-		1E332DD31CE1C3480078D1F3 /* MountainsListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MountainsListTableViewCell.m; sourceTree = "<group>"; };
-		1E332DD51CE1C3740078D1F3 /* MountainsListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MountainsListTableViewCell.xib; sourceTree = "<group>"; };
-		1E332DD71CE1D81A0078D1F3 /* DetailsInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailsInfoViewController.h; sourceTree = "<group>"; };
-		1E332DD81CE1D81A0078D1F3 /* DetailsInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailsInfoViewController.m; sourceTree = "<group>"; };
-		1E332DDA1CE1DA270078D1F3 /* CollectionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionTableViewCell.h; sourceTree = "<group>"; };
-		1E332DDB1CE1DA270078D1F3 /* CollectionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionTableViewCell.m; sourceTree = "<group>"; };
-		1E332DDD1CE1DA3A0078D1F3 /* CollectionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionTableViewCell.xib; sourceTree = "<group>"; };
+		180673848C0D0FCB6603ADCF /* Pods-Mountains.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mountains.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mountains/Pods-Mountains.debug.xcconfig"; sourceTree = "<group>"; };
+		1E06EBCB1CFADE9F00939560 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1E06EBCE1CFAE57500939560 /* MountainsListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MountainsListTableViewController.h; sourceTree = "<group>"; };
+		1E06EBCF1CFAE57500939560 /* MountainsListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MountainsListTableViewController.m; sourceTree = "<group>"; };
+		1E06EBD31CFAE5EA00939560 /* Mountain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mountain.h; sourceTree = "<group>"; };
+		1E06EBD41CFAE5EA00939560 /* Mountain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mountain.m; sourceTree = "<group>"; };
+		1E06EBD61CFAEBF500939560 /* MountainDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MountainDataSource.h; sourceTree = "<group>"; };
+		1E06EBD71CFAEBF500939560 /* MountainDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MountainDataSource.m; sourceTree = "<group>"; };
+		1E06EBDA1CFAF10500939560 /* MountainTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MountainTableViewCell.h; sourceTree = "<group>"; };
+		1E06EBDB1CFAF10500939560 /* MountainTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MountainTableViewCell.m; sourceTree = "<group>"; };
+		1E06EBDD1CFAF11200939560 /* MountainTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MountainTableViewCell.xib; sourceTree = "<group>"; };
+		1E06EBE41CFAF8E700939560 /* SignInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInViewController.h; sourceTree = "<group>"; };
+		1E06EBE51CFAF8E700939560 /* SignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInViewController.m; sourceTree = "<group>"; };
+		1E06EBFE1CFB361400939560 /* DetailMountainTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailMountainTableViewController.h; sourceTree = "<group>"; };
+		1E06EBFF1CFB361400939560 /* DetailMountainTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailMountainTableViewController.m; sourceTree = "<group>"; };
+		1E06EC011CFB367200939560 /* ImageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageTableViewCell.h; sourceTree = "<group>"; };
+		1E06EC021CFB367200939560 /* ImageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageTableViewCell.m; sourceTree = "<group>"; };
+		1E06EC031CFB367200939560 /* ImageTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageTableViewCell.xib; sourceTree = "<group>"; };
+		1E06EC061CFB372100939560 /* DescriptionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DescriptionTableViewCell.h; sourceTree = "<group>"; };
+		1E06EC071CFB372100939560 /* DescriptionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DescriptionTableViewCell.m; sourceTree = "<group>"; };
+		1E06EC081CFB372100939560 /* DescriptionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DescriptionTableViewCell.xib; sourceTree = "<group>"; };
+		1E06EC0B1CFB4AA600939560 /* CreateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateViewController.h; sourceTree = "<group>"; };
+		1E06EC0C1CFB4AA600939560 /* CreateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateViewController.m; sourceTree = "<group>"; };
+		1E06EC0E1CFB4F0A00939560 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		1E06EC0F1CFB4F0A00939560 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
 		1E446E541CDE1624006A2303 /* Mountains.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mountains.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E446E581CDE1624006A2303 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1E446E5A1CDE1624006A2303 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -48,29 +63,8 @@
 		1E446E631CDE1624006A2303 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1E446E661CDE1624006A2303 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1E446E681CDE1624006A2303 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1E8882891CE0DC5B0018AA2D /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
-		1E88828A1CE0DC5B0018AA2D /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
-		1E88828C1CE0DF870018AA2D /* CustomTransparentViewStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTransparentViewStyle.h; sourceTree = "<group>"; };
-		1E88828D1CE0DF870018AA2D /* CustomTransparentViewStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTransparentViewStyle.m; sourceTree = "<group>"; };
-		1E8882951CE0E3CA0018AA2D /* CustomRedButtonStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomRedButtonStyle.h; sourceTree = "<group>"; };
-		1E8882961CE0E3CA0018AA2D /* CustomRedButtonStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomRedButtonStyle.m; sourceTree = "<group>"; };
-		1E8882981CE0E3E50018AA2D /* CustomBlueButtonStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomBlueButtonStyle.h; sourceTree = "<group>"; };
-		1E8882991CE0E3E50018AA2D /* CustomBlueButtonStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomBlueButtonStyle.m; sourceTree = "<group>"; };
-		1E88829B1CE0E9AA0018AA2D /* CustomTextFieldStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTextFieldStyle.h; sourceTree = "<group>"; };
-		1E88829C1CE0E9AA0018AA2D /* CustomTextFieldStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTextFieldStyle.m; sourceTree = "<group>"; };
-		1E94B1EF1CE128AE00E5132B /* UIColor+MountainsColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+MountainsColor.h"; sourceTree = "<group>"; };
-		1E94B1F01CE128AE00E5132B /* UIColor+MountainsColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+MountainsColor.m"; sourceTree = "<group>"; };
-		1E94B1F31CE12EA600E5132B /* Mountains-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Mountains-Prefix.pch"; sourceTree = "<group>"; };
-		1E94B1F71CE12F9500E5132B /* UIFont+MountainsFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+MountainsFont.h"; sourceTree = "<group>"; };
-		1E94B1F81CE12F9500E5132B /* UIFont+MountainsFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+MountainsFont.m"; sourceTree = "<group>"; };
-		1E94B2001CE149BB00E5132B /* MountainsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MountainsListViewController.h; sourceTree = "<group>"; };
-		1E94B2011CE149BB00E5132B /* MountainsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MountainsListViewController.m; sourceTree = "<group>"; };
-		1ED538011CE653A2007A4C06 /* DescriptionMountainTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DescriptionMountainTableViewCell.h; sourceTree = "<group>"; };
-		1ED538021CE653A2007A4C06 /* DescriptionMountainTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DescriptionMountainTableViewCell.m; sourceTree = "<group>"; };
-		1ED538041CE653AF007A4C06 /* DescriptionMountainTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DescriptionMountainTableViewCell.xib; sourceTree = "<group>"; };
-		1ED538061CE6560E007A4C06 /* InfoMountainTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoMountainTableViewCell.h; sourceTree = "<group>"; };
-		1ED538071CE6560E007A4C06 /* InfoMountainTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoMountainTableViewCell.m; sourceTree = "<group>"; };
-		1ED538091CE6561B007A4C06 /* InfoMountainTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoMountainTableViewCell.xib; sourceTree = "<group>"; };
+		B142CC5C2B94AF307F5006DC /* Pods-Mountains.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mountains.release.xcconfig"; path = "Pods/Target Support Files/Pods-Mountains/Pods-Mountains.release.xcconfig"; sourceTree = "<group>"; };
+		EB74106564742142FE6D94F0 /* libPods-Mountains.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Mountains.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,17 +72,70 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE5CA16F4C99BCFDDA2820D5 /* libPods-Mountains.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		03071A67B8D061963F14611D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EB74106564742142FE6D94F0 /* libPods-Mountains.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1E06EBCD1CFAE55400939560 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1E06EBCE1CFAE57500939560 /* MountainsListTableViewController.h */,
+				1E06EBCF1CFAE57500939560 /* MountainsListTableViewController.m */,
+				1E06EBE41CFAF8E700939560 /* SignInViewController.h */,
+				1E06EBE51CFAF8E700939560 /* SignInViewController.m */,
+				1E06EC0B1CFB4AA600939560 /* CreateViewController.h */,
+				1E06EC0C1CFB4AA600939560 /* CreateViewController.m */,
+				1E06EBFE1CFB361400939560 /* DetailMountainTableViewController.h */,
+				1E06EBFF1CFB361400939560 /* DetailMountainTableViewController.m */,
+				1E06EC0E1CFB4F0A00939560 /* ProfileViewController.h */,
+				1E06EC0F1CFB4F0A00939560 /* ProfileViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		1E06EBD21CFAE5C100939560 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1E06EBD31CFAE5EA00939560 /* Mountain.h */,
+				1E06EBD41CFAE5EA00939560 /* Mountain.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		1E06EBD91CFAF0DD00939560 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				1E06EBDA1CFAF10500939560 /* MountainTableViewCell.h */,
+				1E06EBDD1CFAF11200939560 /* MountainTableViewCell.xib */,
+				1E06EBDB1CFAF10500939560 /* MountainTableViewCell.m */,
+				1E06EC011CFB367200939560 /* ImageTableViewCell.h */,
+				1E06EC021CFB367200939560 /* ImageTableViewCell.m */,
+				1E06EC031CFB367200939560 /* ImageTableViewCell.xib */,
+				1E06EC061CFB372100939560 /* DescriptionTableViewCell.h */,
+				1E06EC071CFB372100939560 /* DescriptionTableViewCell.m */,
+				1E06EC081CFB372100939560 /* DescriptionTableViewCell.xib */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
 		1E446E4B1CDE1623006A2303 = {
 			isa = PBXGroup;
 			children = (
 				1E446E561CDE1624006A2303 /* Mountains */,
 				1E446E551CDE1624006A2303 /* Products */,
+				4BE4537F3CD57AE2B62BBA61 /* Pods */,
+				03071A67B8D061963F14611D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,15 +150,17 @@
 		1E446E561CDE1624006A2303 /* Mountains */ = {
 			isa = PBXGroup;
 			children = (
-				1ED5380C1CE65BEB007A4C06 /* Cells */,
-				1E94B1FC1CE132F100E5132B /* UIStyles */,
-				1E94B1FB1CE132C200E5132B /* Helpers */,
+				1E06EBD91CFAF0DD00939560 /* Cells */,
+				1E06EBD21CFAE5C100939560 /* Models */,
+				1E06EBCD1CFAE55400939560 /* Controllers */,
+				1E06EBCB1CFADE9F00939560 /* GoogleService-Info.plist */,
 				1E446E601CDE1624006A2303 /* Main.storyboard */,
-				1ED5380B1CE65BD3007A4C06 /* Controllers */,
 				1E446E631CDE1624006A2303 /* Assets.xcassets */,
 				1E446E651CDE1624006A2303 /* LaunchScreen.storyboard */,
 				1E446E681CDE1624006A2303 /* Info.plist */,
 				1E446E571CDE1624006A2303 /* Supporting Files */,
+				1E06EBD61CFAEBF500939560 /* MountainDataSource.h */,
+				1E06EBD71CFAEBF500939560 /* MountainDataSource.m */,
 			);
 			path = Mountains;
 			sourceTree = "<group>";
@@ -122,123 +171,17 @@
 				1E446E5A1CDE1624006A2303 /* AppDelegate.h */,
 				1E446E5B1CDE1624006A2303 /* AppDelegate.m */,
 				1E446E581CDE1624006A2303 /* main.m */,
-				1E94B1F31CE12EA600E5132B /* Mountains-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		1E94B1FB1CE132C200E5132B /* Helpers */ = {
+		4BE4537F3CD57AE2B62BBA61 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				1E94B1EF1CE128AE00E5132B /* UIColor+MountainsColor.h */,
-				1E94B1F01CE128AE00E5132B /* UIColor+MountainsColor.m */,
-				1E94B1F71CE12F9500E5132B /* UIFont+MountainsFont.h */,
-				1E94B1F81CE12F9500E5132B /* UIFont+MountainsFont.m */,
+				180673848C0D0FCB6603ADCF /* Pods-Mountains.debug.xcconfig */,
+				B142CC5C2B94AF307F5006DC /* Pods-Mountains.release.xcconfig */,
 			);
-			name = Helpers;
-			sourceTree = "<group>";
-		};
-		1E94B1FC1CE132F100E5132B /* UIStyles */ = {
-			isa = PBXGroup;
-			children = (
-				1E8882951CE0E3CA0018AA2D /* CustomRedButtonStyle.h */,
-				1E8882961CE0E3CA0018AA2D /* CustomRedButtonStyle.m */,
-				1E88829B1CE0E9AA0018AA2D /* CustomTextFieldStyle.h */,
-				1E88829C1CE0E9AA0018AA2D /* CustomTextFieldStyle.m */,
-				1E88828C1CE0DF870018AA2D /* CustomTransparentViewStyle.h */,
-				1E88828D1CE0DF870018AA2D /* CustomTransparentViewStyle.m */,
-				1E8882981CE0E3E50018AA2D /* CustomBlueButtonStyle.h */,
-				1E8882991CE0E3E50018AA2D /* CustomBlueButtonStyle.m */,
-			);
-			name = UIStyles;
-			sourceTree = "<group>";
-		};
-		1ED5380B1CE65BD3007A4C06 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				1ED5380D1CE65BF6007A4C06 /* LoginViewController */,
-				1ED5380E1CE65C00007A4C06 /* MountainsListViewController */,
-				1ED5380F1CE65C11007A4C06 /* DetailInfoViewController */,
-			);
-			name = Controllers;
-			sourceTree = "<group>";
-		};
-		1ED5380C1CE65BEB007A4C06 /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-				1ED538101CE65C1F007A4C06 /* DescriptionMountainCell */,
-				1ED538111CE65C32007A4C06 /* InfoMountainCell */,
-				1ED538121CE65C3E007A4C06 /* CollectionCell */,
-				1ED538131CE65C4A007A4C06 /* MountainsListCell */,
-			);
-			name = Cells;
-			sourceTree = "<group>";
-		};
-		1ED5380D1CE65BF6007A4C06 /* LoginViewController */ = {
-			isa = PBXGroup;
-			children = (
-				1E8882891CE0DC5B0018AA2D /* LoginViewController.h */,
-				1E88828A1CE0DC5B0018AA2D /* LoginViewController.m */,
-			);
-			name = LoginViewController;
-			sourceTree = "<group>";
-		};
-		1ED5380E1CE65C00007A4C06 /* MountainsListViewController */ = {
-			isa = PBXGroup;
-			children = (
-				1E94B2001CE149BB00E5132B /* MountainsListViewController.h */,
-				1E94B2011CE149BB00E5132B /* MountainsListViewController.m */,
-			);
-			name = MountainsListViewController;
-			sourceTree = "<group>";
-		};
-		1ED5380F1CE65C11007A4C06 /* DetailInfoViewController */ = {
-			isa = PBXGroup;
-			children = (
-				1E332DD71CE1D81A0078D1F3 /* DetailsInfoViewController.h */,
-				1E332DD81CE1D81A0078D1F3 /* DetailsInfoViewController.m */,
-			);
-			name = DetailInfoViewController;
-			sourceTree = "<group>";
-		};
-		1ED538101CE65C1F007A4C06 /* DescriptionMountainCell */ = {
-			isa = PBXGroup;
-			children = (
-				1ED538011CE653A2007A4C06 /* DescriptionMountainTableViewCell.h */,
-				1ED538021CE653A2007A4C06 /* DescriptionMountainTableViewCell.m */,
-				1ED538041CE653AF007A4C06 /* DescriptionMountainTableViewCell.xib */,
-			);
-			name = DescriptionMountainCell;
-			sourceTree = "<group>";
-		};
-		1ED538111CE65C32007A4C06 /* InfoMountainCell */ = {
-			isa = PBXGroup;
-			children = (
-				1ED538061CE6560E007A4C06 /* InfoMountainTableViewCell.h */,
-				1ED538091CE6561B007A4C06 /* InfoMountainTableViewCell.xib */,
-				1ED538071CE6560E007A4C06 /* InfoMountainTableViewCell.m */,
-			);
-			name = InfoMountainCell;
-			sourceTree = "<group>";
-		};
-		1ED538121CE65C3E007A4C06 /* CollectionCell */ = {
-			isa = PBXGroup;
-			children = (
-				1E332DDA1CE1DA270078D1F3 /* CollectionTableViewCell.h */,
-				1E332DDD1CE1DA3A0078D1F3 /* CollectionTableViewCell.xib */,
-				1E332DDB1CE1DA270078D1F3 /* CollectionTableViewCell.m */,
-			);
-			name = CollectionCell;
-			sourceTree = "<group>";
-		};
-		1ED538131CE65C4A007A4C06 /* MountainsListCell */ = {
-			isa = PBXGroup;
-			children = (
-				1E332DD21CE1C3480078D1F3 /* MountainsListTableViewCell.h */,
-				1E332DD31CE1C3480078D1F3 /* MountainsListTableViewCell.m */,
-				1E332DD51CE1C3740078D1F3 /* MountainsListTableViewCell.xib */,
-			);
-			name = MountainsListCell;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,9 +191,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1E446E6B1CDE1624006A2303 /* Build configuration list for PBXNativeTarget "Mountains" */;
 			buildPhases = (
+				C62C6BF51FAAD8A125F8D30E /* 📦 Check Pods Manifest.lock */,
 				1E446E501CDE1623006A2303 /* Sources */,
 				1E446E511CDE1623006A2303 /* Frameworks */,
 				1E446E521CDE1623006A2303 /* Resources */,
+				ABE771CCBECC08AAE75B237B /* 📦 Embed Pods Frameworks */,
+				C97DFAD784489E03B843D73B /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -298,38 +244,83 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E332DDE1CE1DA3A0078D1F3 /* CollectionTableViewCell.xib in Resources */,
-				1ED538051CE653AF007A4C06 /* DescriptionMountainTableViewCell.xib in Resources */,
-				1E332DD61CE1C3740078D1F3 /* MountainsListTableViewCell.xib in Resources */,
-				1ED5380A1CE6561B007A4C06 /* InfoMountainTableViewCell.xib in Resources */,
+				1E06EBCC1CFADE9F00939560 /* GoogleService-Info.plist in Resources */,
 				1E446E671CDE1624006A2303 /* LaunchScreen.storyboard in Resources */,
 				1E446E641CDE1624006A2303 /* Assets.xcassets in Resources */,
+				1E06EC051CFB367200939560 /* ImageTableViewCell.xib in Resources */,
 				1E446E621CDE1624006A2303 /* Main.storyboard in Resources */,
+				1E06EC0A1CFB372100939560 /* DescriptionTableViewCell.xib in Resources */,
+				1E06EBDE1CFAF11200939560 /* MountainTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		ABE771CCBECC08AAE75B237B /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Mountains/Pods-Mountains-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C62C6BF51FAAD8A125F8D30E /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C97DFAD784489E03B843D73B /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Mountains/Pods-Mountains-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1E446E501CDE1623006A2303 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E94B1F11CE128AE00E5132B /* UIColor+MountainsColor.m in Sources */,
-				1ED538031CE653A2007A4C06 /* DescriptionMountainTableViewCell.m in Sources */,
-				1E332DDC1CE1DA270078D1F3 /* CollectionTableViewCell.m in Sources */,
-				1E88828E1CE0DF870018AA2D /* CustomTransparentViewStyle.m in Sources */,
-				1E94B2021CE149BB00E5132B /* MountainsListViewController.m in Sources */,
-				1ED538081CE6560E007A4C06 /* InfoMountainTableViewCell.m in Sources */,
-				1E88829D1CE0E9AA0018AA2D /* CustomTextFieldStyle.m in Sources */,
-				1E332DD41CE1C3480078D1F3 /* MountainsListTableViewCell.m in Sources */,
+				1E06EBE61CFAF8E700939560 /* SignInViewController.m in Sources */,
+				1E06EBDC1CFAF10500939560 /* MountainTableViewCell.m in Sources */,
+				1E06EBD51CFAE5EA00939560 /* Mountain.m in Sources */,
+				1E06EC001CFB361400939560 /* DetailMountainTableViewController.m in Sources */,
+				1E06EC091CFB372100939560 /* DescriptionTableViewCell.m in Sources */,
+				1E06EC041CFB367200939560 /* ImageTableViewCell.m in Sources */,
+				1E06EC0D1CFB4AA600939560 /* CreateViewController.m in Sources */,
 				1E446E5C1CDE1624006A2303 /* AppDelegate.m in Sources */,
-				1E88829A1CE0E3E50018AA2D /* CustomBlueButtonStyle.m in Sources */,
-				1E8882971CE0E3CA0018AA2D /* CustomRedButtonStyle.m in Sources */,
+				1E06EBD01CFAE57500939560 /* MountainsListTableViewController.m in Sources */,
 				1E446E591CDE1624006A2303 /* main.m in Sources */,
-				1E94B1F91CE12F9500E5132B /* UIFont+MountainsFont.m in Sources */,
-				1E88828B1CE0DC5B0018AA2D /* LoginViewController.m in Sources */,
-				1E332DD91CE1D81A0078D1F3 /* DetailsInfoViewController.m in Sources */,
+				1E06EC101CFB4F0A00939560 /* ProfileViewController.m in Sources */,
+				1E06EBD81CFAEBF500939560 /* MountainDataSource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,10 +430,11 @@
 		};
 		1E446E6C1CDE1624006A2303 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 180673848C0D0FCB6603ADCF /* Pods-Mountains.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Mountains/Mountains-Prefix.pch";
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = Mountains/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -453,10 +445,11 @@
 		};
 		1E446E6D1CDE1624006A2303 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B142CC5C2B94AF307F5006DC /* Pods-Mountains.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Mountains/Mountains-Prefix.pch";
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = Mountains/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
