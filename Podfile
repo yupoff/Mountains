@@ -8,6 +8,7 @@ pod 'Firebase/Database'
 pod 'Firebase/Auth'
 pod 'FirebaseUI'
 pod 'SDWebImage'
+pod 'GoogleMaps'
   # Pods for Mountains
 
 end

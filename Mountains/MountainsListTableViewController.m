@@ -8,19 +8,20 @@
 
 #import "DetailMountainTableViewController.h"
 #import "Mountain.h"
-#import "MountainDataSource.h"
 #import "MountainTableViewCell.h"
 #import "MountainsListTableViewController.h"
+#import "ServerManager.h"
 #import "SignInViewController.h"
 
 @import Firebase;
 @import FirebaseAuth;
 
 @interface MountainsListTableViewController ()
-
+@property (nonatomic, strong) NSArray< Mountain * > *dataSource;
 @end
 
 @implementation MountainsListTableViewController
+static NSString *cellIdentifierMountainCell = @"MountainTableViewCell";
 
 - (void)viewDidLoad
 {
@@ -30,16 +31,11 @@
 
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    self.ref = [[FIRDatabase database] reference];
-    self.dataSource = [[MountainDataSource alloc] initWithQuery:[self getQuery] modelClass:[Mountain class] nibNamed:@"MountainTableViewCell" cellReuseIdentifier:@"MountainTableViewCell" view:self.tableView];
-    [self.dataSource populateCellWithBlock:^(MountainTableViewCell *_Nonnull cell, Mountain *_Nonnull mountain) {
-      cell.titleLabel.text = mountain.title;
-      cell.bodyLabel.text = mountain.body;
-    }];
-    self.tableView.dataSource = self.dataSource;
-    self.tableView.delegate = self;
     [self.tableView setRowHeight:UITableViewAutomaticDimension];
     [self.tableView setEstimatedRowHeight:220.0];
+    [self.tableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
+    self.dataSource = [NSArray array];
+    [self createDataSource];
 }
 
 - (void)didReceiveMemoryWarning
@@ -53,6 +49,22 @@
     [self.tableView reloadData];
 }
 
+- (void)createDataSource
+{
+    [ServerManager getOrderedMountainsByStarCount:^(NSArray *mountains) {
+      self.dataSource = mountains;
+      [self reloadData];
+    }
+        onFailure:^(NSError *error){
+
+        }];
+}
+
+- (void)reloadData
+{
+    [self.tableView reloadData];
+}
+
 #pragma mark - Table view data source
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
@@ -60,21 +72,29 @@
     [self performSegueWithIdentifier:@"detailsInfoMountain" sender:indexPath];
 }
 
-- (FIRDatabaseQuery *)getQuery
-{
-    return [[self.ref child:@"mountains"] queryOrderedByChild:@"starCount"];
-}
-
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     NSIndexPath *path = sender;
     DetailMountainTableViewController *detailsVC = [segue destinationViewController];
-    FirebaseTableViewDataSource *source = self.dataSource;
-    FIRDataSnapshot *snapshot = [source objectAtIndex:path.row];
-    //    detailsVC.mountain = [[Mountain alloc]initWithDictinory:snapshot.value];
-    detailsVC.mountain = [Mountain new];
-    [detailsVC.mountain setValuesForKeysWithDictionary:snapshot.value];
-    // Pass the selected object to the new view controller.
+    detailsVC.mountain = self.dataSource[path.row];
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return self.dataSource.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    MountainTableViewCell *cell = (MountainTableViewCell *)[self.tableView dequeueReusableCellWithIdentifier:cellIdentifierMountainCell];
+    if (!cell)
+    {
+        [self.tableView registerNib:[UINib nibWithNibName:cellIdentifierMountainCell bundle:nil] forCellReuseIdentifier:cellIdentifierMountainCell];
+        cell = [self.tableView dequeueReusableCellWithIdentifier:cellIdentifierMountainCell];
+    }
+    cell.titleLabel.text = self.dataSource[indexPath.row].title;
+    cell.bodyLabel.text = self.dataSource[indexPath.row].body;
+    return cell;
 }
 
 @end

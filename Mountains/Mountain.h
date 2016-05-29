@@ -6,6 +6,7 @@
 //  Copyright © 2016 Тимур Аюпов. All rights reserved.
 //
 
+#import "Location.h"
 #import <Foundation/Foundation.h>
 
 @interface Mountain : NSObject
@@ -19,6 +20,8 @@
 @property (nonatomic, strong) NSNumber *countTracks;
 @property (nonatomic, strong) NSNumber *totalLenghtTracks;
 @property (nonatomic, strong) NSNumber *countLifts;
+@property (nonatomic, strong) NSString *region;
+@property (nonatomic, strong) Location *location;
 
 - (instancetype)initWithDictinory:(NSDictionary *)dict;
 @end

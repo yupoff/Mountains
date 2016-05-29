@@ -60,9 +60,9 @@ static NSString *cellIdentifierImageCell = @"ImageTableViewCell";
         if (!cell)
         {
             [self.tableView registerNib:[UINib nibWithNibName:cellIdentifierImageCell bundle:nil] forCellReuseIdentifier:cellIdentifierImageCell];
-            cell = [self.tableView dequeueReusableCellWithIdentifier:cellIdentifierImageCell];
-            [cell.imageMountainView sd_setImageWithURL:[NSURL URLWithString:self.mountain.image]];
         }
+        cell = [self.tableView dequeueReusableCellWithIdentifier:cellIdentifierImageCell];
+        [cell.imageMountainView sd_setImageWithURL:[NSURL URLWithString:self.mountain.image]];
         return cell;
     }
     else if (indexPath.row == 1)
@@ -71,9 +71,9 @@ static NSString *cellIdentifierImageCell = @"ImageTableViewCell";
         if (!cell)
         {
             [self.tableView registerNib:[UINib nibWithNibName:cellIdentifierDescriptionCell bundle:nil] forCellReuseIdentifier:cellIdentifierDescriptionCell];
-            cell = [self.tableView dequeueReusableCellWithIdentifier:cellIdentifierDescriptionCell];
-            cell.bodyLabel.text = self.mountain.body;
         }
+        cell = [self.tableView dequeueReusableCellWithIdentifier:cellIdentifierDescriptionCell];
+        cell.bodyLabel.text = self.mountain.body;
         return cell;
     }
     else

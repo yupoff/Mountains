@@ -7,14 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-@import Firebase;
-@import FirebaseDatabaseUI;
 
 @interface MountainsListTableViewController : UITableViewController
 
-// [START define_database_reference]
-@property (strong, nonatomic) FIRDatabaseReference *ref;
-// [END define_database_reference]
-@property (strong, nonatomic) FirebaseTableViewDataSource *dataSource;
 
 @end

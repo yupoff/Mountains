@@ -8,7 +8,7 @@
         <!--Карта-->
         <scene sceneID="2Br-mz-AFP">
             <objects>
-                <viewController id="TqS-u9-Pq7" sceneMemberID="viewController">
+                <viewController id="TqS-u9-Pq7" customClass="MapViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ja6-FH-qXj"/>
                         <viewControllerLayoutGuide type="bottom" id="GAH-Nl-DTQ"/>
@@ -24,7 +24,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H9U-OY-6Hw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5068.125" y="1204.2253521126759"/>
+            <point key="canvasLocation" x="5068" y="1204"/>
         </scene>
         <!--Item 3-->
         <scene sceneID="ULT-9v-fG7">
@@ -75,7 +75,6 @@
         <!--Sign In View Controller-->
         <scene sceneID="Bsf-yv-I6R">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="D11-6y-gas" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="Mp8-lf-qEU" customClass="SignInViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="tTg-mU-G3i"/>
@@ -122,13 +121,13 @@
                         <segue destination="bx6-pf-PxT" kind="presentation" identifier="signIn" id="Nso-q1-mBe"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D11-6y-gas" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3759" y="1460"/>
         </scene>
         <!--Create View Controller-->
         <scene sceneID="76N-J3-Cya">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="RWW-S1-0ld" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="pGb-eN-uam" customClass="CreateViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jfp-2f-ORx"/>
@@ -177,6 +176,7 @@
                         <segue destination="bx6-pf-PxT" kind="presentation" identifier="signIn" id="GkI-10-BHs"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RWW-S1-0ld" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3759" y="2157"/>
         </scene>
@@ -258,7 +258,7 @@
         <!--Detail Mountain Table View Controller-->
         <scene sceneID="5hf-V4-M7x">
             <objects>
-                <tableViewController id="JF4-2b-ZJ5" customClass="DetailMountainTableViewController" sceneMemberID="viewController">
+                <tableViewController hidesBottomBarWhenPushed="YES" id="JF4-2b-ZJ5" customClass="DetailMountainTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="d9V-Gj-WJ8">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -316,7 +316,6 @@
         <!--Navigation Controller-->
         <scene sceneID="zNh-kV-4Fd">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8RD-Kz-YWE" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0II-oW-bFN" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
@@ -329,6 +328,7 @@
                         <segue destination="Mp8-lf-qEU" kind="relationship" relationship="rootViewController" id="mjk-cd-ZFP"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8RD-Kz-YWE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3217" y="1460"/>
         </scene>

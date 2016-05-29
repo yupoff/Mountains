@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "ServerManager.h"
+#import <GoogleMaps/GoogleMaps.h>
+
 @import Firebase;
 
 @interface AppDelegate ()
@@ -19,6 +22,8 @@
 {
     // Override point for customization after application launch.
     [FIRApp configure];
+    [GMSServices provideAPIKey:@"AIzaSyB15x3UrLhbLE6NiL0nTMO8IZjVGGDozZI"];
+    [ServerManager sharedManager];
     return YES;
 }
 

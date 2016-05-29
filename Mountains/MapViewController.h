@@ -1,5 +1,5 @@
 //
-//  MountainDataSource.h
+//  MapViewController.h
 //  Mountains
 //
 //  Created by Тимур Аюпов on 29.05.16.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@import FirebaseDatabaseUI;
-
-@interface MountainDataSource : FirebaseTableViewDataSource
+@interface MapViewController : UIViewController
 
 @end

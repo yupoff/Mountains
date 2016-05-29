@@ -6,6 +6,7 @@
 //  Copyright © 2016 Тимур Аюпов. All rights reserved.
 //
 
+#import "Location.h"
 #import "Mountain.h"
 
 @implementation Mountain
@@ -14,8 +15,10 @@
     self = [super init];
     if (self)
     {
-        self.guid = [dict[@"guid"] integerValue];
+        self.location = [[Location alloc] initWithDictinory:dict[@"location"]];
         self.title = dict[@"title"];
+        self.region = dict[@"region"];
+        self.guid = [dict[@"guid"] integerValue];
         self.body = dict[@"body"];
         self.starCount = dict[@"starCount"];
         self.image = dict[@"image"];
