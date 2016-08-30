@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DetailTableViewCell" rowHeight="124" id="xVb-39-8KY" customClass="DetailTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="124"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xVb-39-8KY" id="nwS-f0-FMT">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="123"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="akW-A6-tfM">
+                        <rect key="frame" x="8" y="32" width="304" height="83"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="83" id="anj-mB-edd"/>
+                            <constraint firstAttribute="width" constant="304" id="mJs-MQ-MXH"/>
+                        </constraints>
+                        <string key="text">Оздоровительно-спортивный комплекс "Абзаково" расположен в отрогах Уральских гор на юго-востоке Башкирии. Это один из наиболее подготовленных курортов для отдыха туристов на Урале, который предлагает любителям зимнего отдыха великолепные условия. На трассах курорта Абзаково отдыхают и тренируются не только любители, но и знаменитые спортсменами и сборные российские команды.</string>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="13"/>
+                        <color key="textColor" red="0.61568627450980395" green="0.62352941176470589" blue="0.62352941176470589" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Earth Element-50" translatesAutoresizingMaskIntoConstraints="NO" id="7XS-eS-6sw">
+                        <rect key="frame" x="8" y="8" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="QHo-v7-zip"/>
+                            <constraint firstAttribute="width" constant="20" id="eyx-Xy-SqA"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="info" translatesAutoresizingMaskIntoConstraints="NO" id="Ly1-Wc-gYL">
+                        <rect key="frame" x="292" y="8" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="SaF-J6-DJo"/>
+                            <constraint firstAttribute="height" constant="20" id="myq-ai-Zv4"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="separate" translatesAutoresizingMaskIntoConstraints="NO" id="OP1-jM-sdp">
+                        <rect key="frame" x="8" y="32" width="304" height="1"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="304" id="Qut-gH-olo"/>
+                            <constraint firstAttribute="height" constant="1" id="q2r-dg-qQd"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Абзаково" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vAF-eE-Mqc">
+                        <rect key="frame" x="36" y="8" width="75" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="Aq9-wV-cSN"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Ly1-Wc-gYL" firstAttribute="top" secondItem="nwS-f0-FMT" secondAttribute="topMargin" id="4TS-pX-SAa"/>
+                    <constraint firstItem="7XS-eS-6sw" firstAttribute="top" secondItem="nwS-f0-FMT" secondAttribute="topMargin" id="4s8-3J-Efc"/>
+                    <constraint firstItem="akW-A6-tfM" firstAttribute="top" secondItem="OP1-jM-sdp" secondAttribute="top" id="K0d-8c-c91"/>
+                    <constraint firstItem="Ly1-Wc-gYL" firstAttribute="centerY" secondItem="vAF-eE-Mqc" secondAttribute="centerY" id="Lh0-nh-CCL"/>
+                    <constraint firstItem="akW-A6-tfM" firstAttribute="bottom" secondItem="nwS-f0-FMT" secondAttribute="bottomMargin" id="M8q-Xl-hDf"/>
+                    <constraint firstItem="OP1-jM-sdp" firstAttribute="top" secondItem="Ly1-Wc-gYL" secondAttribute="bottom" constant="4" id="VU6-Db-xkq"/>
+                    <constraint firstItem="akW-A6-tfM" firstAttribute="leading" secondItem="nwS-f0-FMT" secondAttribute="leadingMargin" id="WIF-1M-nWW"/>
+                    <constraint firstItem="Ly1-Wc-gYL" firstAttribute="trailing" secondItem="nwS-f0-FMT" secondAttribute="trailingMargin" id="bVN-gB-cVH"/>
+                    <constraint firstItem="7XS-eS-6sw" firstAttribute="leading" secondItem="nwS-f0-FMT" secondAttribute="leadingMargin" id="qed-vc-Yk2"/>
+                    <constraint firstItem="OP1-jM-sdp" firstAttribute="trailing" secondItem="nwS-f0-FMT" secondAttribute="trailingMargin" id="sfm-3T-9cH"/>
+                    <constraint firstItem="vAF-eE-Mqc" firstAttribute="leading" secondItem="7XS-eS-6sw" secondAttribute="trailing" constant="8" id="stn-0C-zWG"/>
+                    <constraint firstItem="vAF-eE-Mqc" firstAttribute="centerY" secondItem="7XS-eS-6sw" secondAttribute="centerY" id="tsh-Qp-Xga"/>
+                    <constraint firstItem="akW-A6-tfM" firstAttribute="trailing" secondItem="nwS-f0-FMT" secondAttribute="trailingMargin" id="ugj-hM-C1I"/>
+                    <constraint firstItem="OP1-jM-sdp" firstAttribute="top" secondItem="7XS-eS-6sw" secondAttribute="bottom" constant="4" id="umo-Jy-fAa"/>
+                    <constraint firstItem="Ly1-Wc-gYL" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="vAF-eE-Mqc" secondAttribute="trailing" constant="8" id="yEW-az-q0E"/>
+                    <constraint firstItem="OP1-jM-sdp" firstAttribute="leading" secondItem="nwS-f0-FMT" secondAttribute="leadingMargin" id="yRA-55-t1L"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="bodyLabel" destination="akW-A6-tfM" id="Xio-Kj-2R3"/>
+                <outlet property="iconView" destination="7XS-eS-6sw" id="wp3-By-0VU"/>
+                <outlet property="titleLabel" destination="vAF-eE-Mqc" id="EtO-pa-me0"/>
+            </connections>
+            <point key="canvasLocation" x="298" y="349"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Earth Element-50" width="25" height="21"/>
+        <image name="info" width="49" height="49"/>
+        <image name="separate" width="320" height="1"/>
+    </resources>
+</document>

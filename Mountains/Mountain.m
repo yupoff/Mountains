@@ -22,10 +22,8 @@
         self.body = dict[@"body"];
         self.starCount = dict[@"starCount"];
         self.image = dict[@"image"];
-        self.heightDifference = dict[@"heightDifference"];
-        self.countTracks = dict[@"countTracks"];
-        self.totalLenghtTracks = dict[@"totalLenghtTracks"];
-        self.countLifts = dict[@"countLifts"];
+        self.contactsInfo = dict[@"contactsInfo"];
+        self.trackInfo = dict[@"trackInfo"];
     }
     return self;
 }

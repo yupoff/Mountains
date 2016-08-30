@@ -14,12 +14,10 @@
 @property (nonatomic, assign) NSInteger guid;
 @property (nonatomic, strong) NSString *title;
 @property (nonatomic, strong) NSString *body;
+@property (nonatomic, strong) NSString *trackInfo;
+@property (nonatomic, strong) NSString *contactsInfo;
 @property (nonatomic, strong) NSNumber *starCount;
 @property (nonatomic, strong) NSString *image;
-@property (nonatomic, strong) NSNumber *heightDifference;
-@property (nonatomic, strong) NSNumber *countTracks;
-@property (nonatomic, strong) NSNumber *totalLenghtTracks;
-@property (nonatomic, strong) NSNumber *countLifts;
 @property (nonatomic, strong) NSString *region;
 @property (nonatomic, strong) Location *location;
 

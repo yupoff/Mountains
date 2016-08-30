@@ -1,14 +1,14 @@
 //
-//  MountainTableViewCell.m
+//  CommentTableViewCell.m
 //  Mountains
 //
-//  Created by Тимур Аюпов on 29.05.16.
+//  Created by Тимур Аюпов on 05.06.16.
 //  Copyright © 2016 Тимур Аюпов. All rights reserved.
 //
 
-#import "MountainTableViewCell.h"
+#import "CommentTableViewCell.h"
 
-@implementation MountainTableViewCell
+@implementation CommentTableViewCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];

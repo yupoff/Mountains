@@ -1,5 +1,5 @@
 //
-//  MountainTableViewCell.h
+//  DetailTableViewCell.h
 //  Mountains
 //
 //  Created by Тимур Аюпов on 29.05.16.
@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MountainTableViewCell : UITableViewCell
+@interface DetailTableViewCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *bodyLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *iconView;
 
 @end

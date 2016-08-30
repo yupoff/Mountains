@@ -8,7 +8,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DescriptionTableViewCell" id="KGk-i7-Jjw" customClass="DescriptionTableViewCell">
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="DescriptionTableViewCell" id="KGk-i7-Jjw" customClass="DescriptionTableViewCell">
             <rect key="frame" x="0.0" y="0.0" width="320" height="405"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
@@ -18,34 +18,16 @@
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xA1-cs-NVt">
                         <rect key="frame" x="8" y="8" width="304" height="388"/>
                         <string key="text">Горнолыжный комплекс ОАО "Татнефть" ("Ян") расположен на юго-востоке республики Татарстан, в десяти километрах к северу от г. Альметьевск, в районе деревни "Поташная поляна". Открыт в 2004 году. Этот курорт - замечательное место, где можно отдохнуть, полюбоваться лесными пейзажами и пронестись по склону. Ландшафты и природа создают уникальные возможности для активного отдыха. Сейчас на территории комплекса имеется 7 освещенных горнолыжных трасс различной категории сложности. Тем, кто предпочитает спокойный отдых придется по душе отдых в санатории-профилактории "Ян", расположенном вблизи склонов.</string>
-                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
-                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                        <color key="textColor" red="0.61568627450980395" green="0.62352941176470589" blue="0.62352941176470589" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="separate" translatesAutoresizingMaskIntoConstraints="NO" id="lCm-Or-8qJ">
-                        <rect key="frame" x="0.0" y="404" width="320" height="1"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="320" id="rtw-yN-KhZ"/>
-                            <constraint firstAttribute="height" constant="1" id="ybr-eh-fuZ"/>
-                        </constraints>
-                    </imageView>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="separate" translatesAutoresizingMaskIntoConstraints="NO" id="Iln-wI-vdb">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="1"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="1" id="Cta-Fr-hH4"/>
-                            <constraint firstAttribute="width" constant="320" id="IVs-RQ-Pqy"/>
-                        </constraints>
-                    </imageView>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="lCm-Or-8qJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="0bR-SP-17f"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="lCm-Or-8qJ" secondAttribute="bottom" constant="-9" id="2u2-CE-HLX"/>
                     <constraint firstItem="xA1-cs-NVt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="FCg-pc-WFl"/>
                     <constraint firstItem="xA1-cs-NVt" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="N7H-2B-izR"/>
                     <constraint firstItem="xA1-cs-NVt" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="YPd-WA-pUE"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="lCm-Or-8qJ" secondAttribute="trailing" constant="-8" id="ipF-lP-17b"/>
                     <constraint firstItem="xA1-cs-NVt" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="q5w-JV-vp1"/>
-                    <constraint firstItem="lCm-Or-8qJ" firstAttribute="top" secondItem="xA1-cs-NVt" secondAttribute="bottom" constant="8" id="rgi-eb-HXC"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
@@ -54,7 +36,4 @@
             <point key="canvasLocation" x="468" y="628.5"/>
         </tableViewCell>
     </objects>
-    <resources>
-        <image name="separate" width="320" height="1"/>
-    </resources>
 </document>

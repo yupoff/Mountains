@@ -7,10 +7,12 @@
 //
 
 #import "DescriptionTableViewCell.h"
+#import "DetailInfoTableViewController.h"
 #import "DetailMountainTableViewController.h"
+#import "DetailTableViewCell.h"
 #import "ImageTableViewCell.h"
+#import "SearchTableViewCell.h"
 #import <SDWebImage/UIImageView+WebCache.h>
-
 @interface DetailMountainTableViewController ()
 
 @end
@@ -19,6 +21,8 @@
 
 static NSString *cellIdentifierDescriptionCell = @"DescriptionTableViewCell";
 static NSString *cellIdentifierImageCell = @"ImageTableViewCell";
+static NSString *cellIdentifierSearchTableViewCell = @"SearchTableViewCell";
+static NSString *cellDetailTableViewCell = @"DetailTableViewCell";
 
 - (void)viewDidLoad
 {
@@ -49,7 +53,7 @@ static NSString *cellIdentifierImageCell = @"ImageTableViewCell";
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 2;
+    return 6;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -67,6 +71,30 @@ static NSString *cellIdentifierImageCell = @"ImageTableViewCell";
     }
     else if (indexPath.row == 1)
     {
+        SearchTableViewCell *cell = (SearchTableViewCell *)[self.tableView dequeueReusableCellWithIdentifier:cellIdentifierSearchTableViewCell];
+        if (!cell)
+        {
+            [self.tableView registerNib:[UINib nibWithNibName:cellIdentifierSearchTableViewCell bundle:nil] forCellReuseIdentifier:cellIdentifierSearchTableViewCell];
+        }
+        cell = [self.tableView dequeueReusableCellWithIdentifier:cellIdentifierSearchTableViewCell];
+        cell.titleLabel.text = @"Найти авиабилеты";
+        cell.iconView.image = [UIImage imageNamed:@"airplane-mode-0"];
+        return cell;
+    }
+    else if (indexPath.row == 2)
+    {
+        SearchTableViewCell *cell = (SearchTableViewCell *)[self.tableView dequeueReusableCellWithIdentifier:cellIdentifierSearchTableViewCell];
+        if (!cell)
+        {
+            [self.tableView registerNib:[UINib nibWithNibName:cellIdentifierSearchTableViewCell bundle:nil] forCellReuseIdentifier:cellIdentifierSearchTableViewCell];
+        }
+        cell = [self.tableView dequeueReusableCellWithIdentifier:cellIdentifierSearchTableViewCell];
+        cell.titleLabel.text = @"Найти отели";
+        cell.iconView.image = [UIImage imageNamed:@"hotel"];
+        return cell;
+    }
+    else if (indexPath.row == 3)
+    {
         DescriptionTableViewCell *cell = (DescriptionTableViewCell *)[self.tableView dequeueReusableCellWithIdentifier:cellIdentifierDescriptionCell];
         if (!cell)
         {
@@ -76,54 +104,62 @@ static NSString *cellIdentifierImageCell = @"ImageTableViewCell";
         cell.bodyLabel.text = self.mountain.body;
         return cell;
     }
+    else if (indexPath.row == 4)
+    {
+        DetailTableViewCell *cell = (DetailTableViewCell *)[self.tableView dequeueReusableCellWithIdentifier:cellDetailTableViewCell];
+        if (!cell)
+        {
+            [self.tableView registerNib:[UINib nibWithNibName:cellDetailTableViewCell bundle:nil] forCellReuseIdentifier:cellDetailTableViewCell];
+        }
+        cell = [self.tableView dequeueReusableCellWithIdentifier:cellDetailTableViewCell];
+        cell.titleLabel.text = @"Трассы и подъемники";
+        cell.bodyLabel.text = self.mountain.trackInfo;
+        cell.iconView.image = [UIImage imageNamed:@"info-button"];
+        return cell;
+    }
+    else if (indexPath.row == 5)
+    {
+        DetailTableViewCell *cell = (DetailTableViewCell *)[self.tableView dequeueReusableCellWithIdentifier:cellDetailTableViewCell];
+        if (!cell)
+        {
+            [self.tableView registerNib:[UINib nibWithNibName:cellDetailTableViewCell bundle:nil] forCellReuseIdentifier:cellDetailTableViewCell];
+        }
+        cell = [self.tableView dequeueReusableCellWithIdentifier:cellDetailTableViewCell];
+        cell.titleLabel.text = @"Как добраться";
+        cell.bodyLabel.text = self.mountain.contactsInfo;
+        cell.iconView.image = [UIImage imageNamed:@"info-button"];
+        return cell;
+    }
+
     else
     {
         return nil;
     }
 }
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (indexPath.row == 4 || indexPath.row == 5)
+    {
+        [self performSegueWithIdentifier:@"detailInfo" sender:indexPath];
+    }
 }
-*/
 
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    NSIndexPath *path = sender;
+    if (path.row == 4)
+    {
+        DetailInfoTableViewController *detailsVC = [segue destinationViewController];
+        detailsVC.imageUrl = self.mountain.image;
+        detailsVC.body = self.mountain.trackInfo;
+    }
+    if (path.row == 5)
+    {
+        DetailInfoTableViewController *detailsVC = [segue destinationViewController];
+        detailsVC.imageUrl = self.mountain.image;
+        detailsVC.body = self.mountain.contactsInfo;
+    }
 }
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

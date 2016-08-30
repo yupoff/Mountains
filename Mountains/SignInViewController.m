@@ -21,6 +21,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -78,6 +79,12 @@
                  }];
 
     }];
+}
+
+- (void)touchesBegan:(NSSet< UITouch * > *)touches withEvent:(UIEvent *)event
+{
+    [self.emailTextField resignFirstResponder];
+    [self.passwordTextField resignFirstResponder];
 }
 
 @end

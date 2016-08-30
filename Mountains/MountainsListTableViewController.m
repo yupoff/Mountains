@@ -7,8 +7,8 @@
 //
 
 #import "DetailMountainTableViewController.h"
+#import "DetailTableViewCell.h"
 #import "Mountain.h"
-#import "MountainTableViewCell.h"
 #import "MountainsListTableViewController.h"
 #import "ServerManager.h"
 #import "SignInViewController.h"
@@ -21,7 +21,7 @@
 @end
 
 @implementation MountainsListTableViewController
-static NSString *cellIdentifierMountainCell = @"MountainTableViewCell";
+static NSString *cellDetailTableViewCell = @"DetailTableViewCell";
 
 - (void)viewDidLoad
 {
@@ -34,6 +34,7 @@ static NSString *cellIdentifierMountainCell = @"MountainTableViewCell";
     [self.tableView setRowHeight:UITableViewAutomaticDimension];
     [self.tableView setEstimatedRowHeight:220.0];
     [self.tableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
+    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
     self.dataSource = [NSArray array];
     [self createDataSource];
 }
@@ -86,14 +87,15 @@ static NSString *cellIdentifierMountainCell = @"MountainTableViewCell";
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    MountainTableViewCell *cell = (MountainTableViewCell *)[self.tableView dequeueReusableCellWithIdentifier:cellIdentifierMountainCell];
+    DetailTableViewCell *cell = (DetailTableViewCell *)[self.tableView dequeueReusableCellWithIdentifier:cellDetailTableViewCell];
     if (!cell)
     {
-        [self.tableView registerNib:[UINib nibWithNibName:cellIdentifierMountainCell bundle:nil] forCellReuseIdentifier:cellIdentifierMountainCell];
-        cell = [self.tableView dequeueReusableCellWithIdentifier:cellIdentifierMountainCell];
+        [self.tableView registerNib:[UINib nibWithNibName:cellDetailTableViewCell bundle:nil] forCellReuseIdentifier:cellDetailTableViewCell];
     }
+    cell = [self.tableView dequeueReusableCellWithIdentifier:cellDetailTableViewCell];
     cell.titleLabel.text = self.dataSource[indexPath.row].title;
     cell.bodyLabel.text = self.dataSource[indexPath.row].body;
+    cell.iconView.image = [UIImage imageNamed:@"Earth Element-50"];
     return cell;
 }
 

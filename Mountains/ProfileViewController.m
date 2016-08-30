@@ -10,6 +10,8 @@
 #import "SignInViewController.h"
 @import FirebaseAuth;
 @interface ProfileViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *nicknameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *emailLabel;
 
 @end
 
@@ -18,7 +20,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    FIRUser *user = [FIRAuth auth].currentUser;
+    self.nicknameLabel.text = user.displayName;
+    self.emailLabel.text = user.email;
 }
 
 - (void)didReceiveMemoryWarning

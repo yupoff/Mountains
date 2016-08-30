@@ -6,6 +6,7 @@ target 'Mountains' do
   # use_frameworks!
 pod 'Firebase/Database'
 pod 'Firebase/Auth'
+pod 'Firebase/Storage'
 pod 'FirebaseUI'
 pod 'SDWebImage'
 pod 'GoogleMaps'
